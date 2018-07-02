@@ -14,11 +14,11 @@ function destructivelyAddElementToEndOfArray(array, element)
 }
 function destructivelyRemoveElementFromEndOfArray(array)
 {
-  var newarray = array.slice(-1)
-  array.slice(-1)
+  var newarray = array.pop()
+  array = newarray
 }
 function destructivelyRemoveElementFromBeginningOfArray(array)
 {
-  var newarray = array.slice(1)
+  var newarray = array.shift()
   array = newarray
 }
